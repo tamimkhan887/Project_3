@@ -1,11 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Geometry_Genius</title>
+    <style>
+        .font-primary {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-primary container mx-auto">
+    <header class="m-6 md:m-12">
+        <div class="bg-[#1090D81A] shadow-sm rounded-lg flex justify-between items-center">
+            <div class="p-4 md:p-6">
+                <a class="text-[#111111CC] font-bold lg:text-5xl md:text-3xl text-2xl">Interactive
+                    <br> <span class="text-[#11111199] text-xl md:text-2xl lg:text-3xl font-medium">Geometry
+                        Genius</span></a>
+            </div>
+            <div class="px-4 md:px-12 py-6 md:py-10">
+                <button class="btn btn-ghost py-2 px-6 md:px-10 bg-[#1090D8] text-[#FFF] rounded-lg">Blog</button>
+            </div>
+        </div>
+    </header>
+    <main class="m-12">
+            <!-- calculate Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card bg-base-100 w-auto shadow-sm rounded-lg ">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Shape" />
+                    </figure>
+                    <div class="card-body items-center text-center mt-16">
+                        <h2 class="card-title text-[#414141] font-bold text-2xl">Triangle</h2>
+                        <p class="font-normal text-base text-[#414141]">Area (A) = 0.5 X b X h</p>
+                        <div class="grid grid-cols-1 gap-y-4 m-4">
+                            <div>
+                                <input type="text" placeholder="b"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="h"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full  mt-16  ">
+                            <button
+                                class="btn w-full text-[#FFF] rounded-lg bg-[#1090D8] font-bold text-xl py-6">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card bg-base-100 w-auto shadow-sm rounded-lg">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rectangle.png" alt="Shape" />
+                    </figure>
+                    <div class="card-body items-center text-center mt-16">
+                        <h2 class="card-title text-[#414141] font-bold text-2xl">Rectangle</h2>
+                        <p class="font-normal text-base text-[#414141]">Area (A) = w x l</p>
+                        <div class="grid grid-cols-1 gap-y-4 m-4">
+                            <div>
+                                <input type="text" placeholder="w"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="l"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full  mt-16  ">
+                            <button
+                                class="btn w-full text-[#FFF] rounded-lg bg-[#1090D8] font-bold text-xl py-6">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card bg-base-100 w-auto shadow-sm rounded-lg">
+                    <figure class="px-10 pt-10">
+                        <img src="images/parallelogram.png" alt="Shape" />
+                    </figure>
+                    <div class="card-body items-center text-center mt-16">
+                        <h2 class="card-title text-[#414141] font-bold text-2xl">Parallelogram</h2>
+                        <p class="font-normal text-base text-[#414141]">Area (A) = b X h</p>
+                        <div class="grid grid-cols-1 gap-y-4 m-4">
+                            <div>
+                                <input type="text" placeholder="b"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="h"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full  mt-16  ">
+                            <button
+                                class="btn w-full text-[#FFF] rounded-lg bg-[#1090D8] font-bold text-xl py-6">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card bg-base-100 w-auto shadow-sm rounded-lg">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rhombus.png" alt="Shape" />
+                    </figure>
+                    <div class="card-body items-center text-center mt-16">
+                        <h2 class="card-title text-[#414141] font-bold text-2xl">Rhombus</h2>
+                        <p class="font-normal text-base text-[#414141]">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub>
+                        </p>
+                        <div class="grid grid-cols-1 gap-y-4 m-4">
+                            <div>
+                                <input type="text" placeholder="d₁"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="d₂"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full  mt-16  ">
+                            <button
+                                class="btn w-full text-[#FFF] rounded-lg bg-[#1090D8] font-bold text-xl py-6">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card bg-base-100 w-auto shadow-sm rounded-lg">
+                    <figure class="px-10 pt-10">
+                        <img src="images/pentagon.png" alt="Shape" />
+                    </figure>
+                    <div class="card-body items-center text-center mt-16">
+                        <h2 class="card-title text-[#414141] font-bold text-2xl">Pentagon</h2>
+                        <p class="font-normal text-base text-[#414141]">Area (A) = 0.5 x p x b</p>
+                        <div class="grid grid-cols-1 gap-y-4 m-4">
+                            <div>
+                                <input type="text" placeholder="p"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="b"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+
+                            </div>
+                        </div>
+                        <div class="card-actions w-full  mt-16  ">
+                            <button
+                                class="btn w-full text-[#FFF] rounded-lg bg-[#1090D8] font-bold text-xl py-6">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card bg-base-100 w-auto shadow-sm rounded-lg">
+                    <figure class="px-10 pt-10">
+                        <img src="images/ellipse.png" alt="Shape" />
+                    </figure>
+                    <div class="card-body items-center text-center mt-16">
+                        <h2 class="card-title text-[#414141] font-bold text-2xl">Ellipse</h2>
+                        <p class="font-normal text-base text-[#414141]">Area (A) = πab </p>
+                        <div class="grid grid-cols-1 gap-y-4 m-4">
+                            <div>
+                                <input type="text" placeholder="a"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="b"
+                                    class="pl-3 py-1 bg-[#F1F1F1] border-none rounded-sm text-base font-normal w-4/5">
+                                <span class="text-[#414141] text-base font-normal">cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions w-full  mt-16">
+                            <button
+                                class="btn w-full text-[#FFF] rounded-lg bg-[#1090D8] font-bold text-xl py-6">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
 </body>
+
 </html>
